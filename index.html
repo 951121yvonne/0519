@@ -9,57 +9,16 @@
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
 
-  <style>
-    /* ─────────────────────────────────────────────────────────────
-       CSS STYLES (賽博朋克 / 暗色霓虹風)
-       ───────────────────────────────────────────────────────────── */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: linear-gradient(135deg, #0d0d1a 0%, #1a1040 50%, #0a1520 100%);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-family: Arial, sans-serif;
-    }
-
-    #wrap {
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 0 80px rgba(80, 160, 255, .18), 0 0 0 1px rgba(255, 255, 255, .08);
-    }
-
-    canvas {
-      display: block;
-    }
-
-    video {
-      display: none;
-    }
-
-    #footer {
-      margin-top: 10px;
-      color: rgba(255, 255, 255, .28);
-      font-size: 12px;
-      letter-spacing: .5px;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- 隱藏的原生攝影機元件 -->
-  <video id="vid" width="640" height="480" autoplay playsinline></video>
+  <video id="vid" width="960" height="720" autoplay playsinline></video>
 
   <!-- 遊戲主舞台外框 -->
   <div id="wrap">
-    <canvas id="c" width="640" height="480"></canvas>
+    <canvas id="c" width="960" height="720"></canvas>
   </div>
 
   <!-- 頁尾提示 -->
@@ -72,7 +31,7 @@
     'use strict';
 
     // ── CONFIG ──
-    const W = 640, H = 480;
+    const W = 960, H = 720;
     const cv = document.getElementById('c');
     const g = cv.getContext('2d');
     const vid = document.getElementById('vid');
