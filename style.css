@@ -29,7 +29,7 @@ body {
   color: var(--text-main);
   background: radial-gradient(circle at top left, rgba(122, 201, 255, 0.28), transparent 34%),
               radial-gradient(circle at bottom right, rgba(101, 178, 255, 0.22), transparent 28%),
-              linear-gradient(180deg, #f6fbff 0%, #e2eef7 45%, #d3e2ed 100%);
+              linear-gradient(180deg, #f6fbff 0%, #719ab9 45%, #4e81a5 100%);
   display: flex;
   align-items: center;
   justify-content: center;
